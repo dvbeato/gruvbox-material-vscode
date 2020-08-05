@@ -1458,6 +1458,51 @@ export function getItalicSyntax(palette: Palette, italicComments: boolean) {
       },
     },
     // }}}
+    // Django{{{
+    {
+      name: "Django grey",
+      scope: "keyword.operator.getter.django",
+      settings: {
+        foreground: palette.grey1,
+      },
+    },
+    {
+      name: "Django white",
+      scope: "string.unquoted.tag-string.django, keyword.operator.argument-separator.django",
+      settings: {
+        foreground: palette.fg,
+      },
+    },
+    {
+      name: "Django aqua",
+      scope: "entity.tag.tagbraces.django, entity.tag.filter-pipe.django",
+      settings: {
+        foreground: palette.aqua,
+      },
+    },
+    {
+      name: "Django red",
+      scope: "keyword.operator.django, keyword.control.tag-name.django, constant.other.tag.name.django",
+      settings: {
+        foreground: palette.red,
+        fontStyle: "italic",
+      },
+    },
+    {
+      name: "Django purple",
+      scope: "keyword.control.filter.django, keyword.operator.filter-argument.django",
+      settings: {
+        foreground: palette.purple,
+      },
+    },
+    {
+      name: "Django blue",
+      scope: "constant.other.contrib.django",
+      settings: {
+        foreground: palette.blue,
+      },
+    },
+    // }}}
     // Lua{{{
     {
       name: "Lua aqua",
